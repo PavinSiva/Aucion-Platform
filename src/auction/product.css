@@ -1,0 +1,319 @@
+.d-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 600px;
+    width: 100%;
+    background-color: seagreen;
+}
+.b-img{
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+}
+.b-img img{
+    width: 70%;
+    height: 70%;
+    border-radius: 40px;
+    margin-top: 25px;
+    transition: transform 0.4s ease-in-out;
+}
+.b-img img:hover {
+    transform: scale(1.1);
+}
+.b-details{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.b-details h1{
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: white;
+}
+.des{
+    display: flex;
+}
+.des p{
+    font-size: 16px;
+    align-items: flex-start;
+    text-align: left;
+    left: 0;
+    color: white;
+}
+/* Timer Container */
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
+    text-align: center;
+}
+
+
+
+.timer-box {
+    background:white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 80px;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(105, 236, 138, 0.3);
+    transition: transform 0.3s ease-in-out;
+    color: seagreen;
+}
+
+
+.timer-box:hover {
+    transform: scale(1.1);
+}
+.timer-box span {
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: seagreen;
+    margin-top: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.tb{
+    display: flex;
+    margin-top: 90px;
+}
+#ends{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 90px;
+    flex-direction: column;
+}
+#ends h1{
+    font-size: 50px;
+    color: seagreen;
+}
+#engage-con{
+    width: 50%;
+    height: 40%;
+    display: flex;
+    align-items: last baseline;
+    justify-self: left;
+}
+#engage-con img{
+    height: 200px;
+    width: 450px;
+    margin-right: 100px;
+}
+
+.bid-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    gap:30px
+}
+.bid-btn button {
+    padding: 12px;
+    background-color: seagreen;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.2);
+    margin-top: 30px;
+}
+button:hover {
+    background-color: black;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 100, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+    input, button {
+        font-size: 0.9em;
+    }
+} 
+
+.btn-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background: seagreen;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem auto;
+}
+.price {
+    text-align: center;
+    color: white;
+}
+
+.price h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    font-size: 30px;
+}
+
+.bid-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 0.5rem;
+}
+.bid-btn button,
+.btn-timer button {
+    background: white;
+    color: seagreen;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 150px;
+    text-align: center;
+}
+
+
+
+.bid-btn button:first-child {
+    background: white;
+}
+
+.bid-btn button:first-child:hover {
+    background: lightcoral;
+}
+
+.btn-timer button:last-child {
+    background:white;
+}
+
+.btn-timer button:last-child:hover {
+    background:lightgreen;
+}
+
+@media (max-width: 500px) {
+    .btn-timer {
+        padding: 1rem;
+    }
+
+    .bid-btn {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .bid-btn button,
+    .btn-timer button {
+        max-width: none;
+    }
+}
+
+.bid-history {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bid-history h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .bid-history table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .bid-history thead {
+    background-color: seagreen;
+    color: white;
+  }
+  
+  .bid-history th, 
+  .bid-history td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .bid-history tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+  }
+  
+  .bid-history th {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .bid-history tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .bid-history tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .bid-history td {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .bid-history {
+      padding: 15px;
+    }
+  
+    .bid-history table {
+      font-size: 12px;
+    }
+  
+    .bid-history th, .bid-history td {
+      padding: 10px;
+    }
+  }
+  
+ 
