@@ -4,7 +4,9 @@
     flex-direction: row;
     height: 600px;
     width: 100%;
-    background-color: seagreen;
+    padding: 20px;
+
+    
 }
 .b-img{
     width: 50%;
@@ -12,13 +14,15 @@
     justify-content: center;
     align-items: center;
     overflow: hidden; 
+    
 }
 .b-img img{
     width: 70%;
     height: 70%;
     border-radius: 40px;
-    margin-top: 25px;
+    margin-top: 100px;
     transition: transform 0.4s ease-in-out;
+    margin-left:100px ;
 }
 .b-img img:hover {
     transform: scale(1.1);
@@ -30,10 +34,13 @@
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: seagreen;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .b-details h1{
     font-size: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: white;
 }
 .des{

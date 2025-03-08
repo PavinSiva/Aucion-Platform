@@ -104,7 +104,7 @@ function App() {
       sdescription: "Used by Neymar Jr",
       sbid: 3500,
       bdescription:
-        "This Neymar Jr Jersey is a rare piece of football memorabilia, personally hand-signed by the Brazilian superstar himself. Worn during a match, this authentic Paris Saint-Germain (PSG) home kit features Neymar’s iconic #10 and the PSG club crest, beautifully embroidered details, and premium materials. It comes with a Certificate of Authenticity and is housed in a display-ready frame, making it a must-have for football fans and collectors. Owning this jersey means having a unique piece of football history, a perfect addition to any sports collection.",
+        "This Neymar Jr Jersey is a rare piece of football memorabilia, personally hand-signed by the Brazilian superstar himself. Worn during a match, this authentic Paris Saint-Germain (PSG) home kit features Neymar’s iconic #10 and the PSG club crest, beautifully embroidered details, and premium materials. It comes with a Certificate of Authenticity and is housed in a display-ready frame, making it a must-have for football fans and collectors. Owning this jersey means having a unique piece of football history.",
     },
     {
       id: 10,

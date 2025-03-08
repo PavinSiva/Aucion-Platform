@@ -11,6 +11,8 @@ import { useState, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
+import Testimonials from "./Testimonials";
+
 
 import per1 from "./per1.jpg";
 import per2 from "./per2.jpg";
@@ -35,6 +37,18 @@ import slide6 from "./slide6.png";
 import slide7 from "./slide7.png";
 import slide8 from "./slide8.png";
 import slide9 from "./slide9.png";
+
+
+import wslide1 from "./wslide1.png";
+import wslide2 from "./wslide2.png";
+import wslide3 from "./wslide3.png";
+import wslide4 from "./wslide4.png";
+import wslide5 from "./wslide5.png";
+import wslide6 from "./wslide6.png";
+import wslide7 from "./wslide7.png";
+import wslide8 from "./wslide8.png";
+import wslide9 from "./wslide9.png";
+
 
 const Home = ({ products, deleteProduct, user, setUser }) => {
   const navigate = useNavigate();
@@ -213,6 +227,70 @@ const Home = ({ products, deleteProduct, user, setUser }) => {
         </motion.div>
       </div>
 
+      <div id="brandpar">
+        <h1>Top Brands & Partners</h1>
+          <div className="wslider">
+          <div className="slide-track">
+            <div className="br">
+              <img src={wslide1} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide2} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide3} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide4} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide5} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide6} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide7} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide8} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide9} alt="" />
+            </div>
+
+            <div className="br">
+              <img src={wslide1} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide2} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide3} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide4} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide5} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide6} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide7} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide8} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide9} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
       <motion.div
         className="text-section"
         id="top"
@@ -244,73 +322,10 @@ const Home = ({ products, deleteProduct, user, setUser }) => {
             src={hammer}
             className="ham bx-tada"
             alt="Auction Hammer"
-            height="300px"
+            height="200px"
           />
         </div>
       </motion.div>
-      <div className="topbr">
-        <h1>Top brands</h1>
-      </div>
-
-      <div className="slider">
-        <div className="slide-track">
-          <div className="br">
-            <img src={slide1} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide2} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide3} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide4} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide5} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide6} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide7} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide8} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide9} alt="" />
-          </div>
-
-          <div className="br">
-            <img src={slide1} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide2} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide3} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide4} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide5} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide6} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide7} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide8} alt="" />
-          </div>
-          <div className="br">
-            <img src={slide9} alt="" />
-          </div>
-        </div>
-      </div>
 
       <div className="image-con" id="about">
         <div className="slide">
@@ -464,6 +479,7 @@ const Home = ({ products, deleteProduct, user, setUser }) => {
           <img src={imgdash} id="ser-img" alt="" />
         </motion.div>
       </motion.div>
+      <Testimonials />
 
       <motion.footer
         id="footer"
@@ -569,6 +585,65 @@ const Home = ({ products, deleteProduct, user, setUser }) => {
             </motion.div>
           </motion.div>
         </div>
+        <div className="slider">
+        <div className="slide-track">
+          <div className="br">
+            <img src={slide1} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide2} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide3} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide4} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide5} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide6} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide7} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide8} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide9} alt="" />
+          </div>
+
+          <div className="br">
+            <img src={slide1} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide2} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide3} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide4} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide5} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide6} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide7} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide8} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide9} alt="" />
+          </div>
+        </div>
+      </div>
       </motion.footer>
     </div>
   );

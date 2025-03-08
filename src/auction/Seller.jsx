@@ -17,6 +17,34 @@ import per7 from "./per7.jpg";
 import main6 from "./main6.png";
 import imgdash from "./imgdash.png";
 import welcome from "./welcome.png";
+import About from "./aboutimage.jpg";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef } from "react";
+import Testimonials from "./Testimonials";
+
+
+import slide1 from "./slide1.png";
+import slide2 from "./slide2.png";
+import slide3 from "./slide3.png";
+import slide4 from "./slide4.png";
+import slide5 from "./slide5.png";
+import slide6 from "./slide6.png";
+import slide7 from "./slide7.png";
+import slide8 from "./slide8.png";
+import slide9 from "./slide9.png";
+
+
+import wslide1 from "./wslide1.png";
+import wslide2 from "./wslide2.png";
+import wslide3 from "./wslide3.png";
+import wslide4 from "./wslide4.png";
+import wslide5 from "./wslide5.png";
+import wslide6 from "./wslide6.png";
+import wslide7 from "./wslide7.png";
+import wslide8 from "./wslide8.png";
+import wslide9 from "./wslide9.png";
+
 
 const Seller = ({ addProduct ,user , setUser }) => {
   const navigate = useNavigate();
@@ -191,55 +219,140 @@ const Seller = ({ addProduct ,user , setUser }) => {
         </div>
       </div>
 
-      <div className="text-section" id="top">
-        <div className="text">
+      
+      <div id="brandpar">
+        <h1>Top Brands & Partners</h1>
+          <div className="wslider">
+          <div className="slide-track">
+            <div className="br">
+              <img src={wslide1} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide2} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide3} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide4} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide5} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide6} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide7} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide8} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide9} alt="" />
+            </div>
+
+            <div className="br">
+              <img src={wslide1} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide2} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide3} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide4} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide5} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide6} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide7} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide8} alt="" />
+            </div>
+            <div className="br">
+              <img src={wslide9} alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <motion.div
+        className="text-section"
+        id="top"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
+        <motion.div
+          className="text"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h1>
-            Place Your <span id="cchange">Products</span> <br />
-            <span id="cchange">Sell</span> with passion{" "}
+            <span>Hot </span>Sale! <br />
+            Hunt Your Treasure
           </h1>
           <p>
-            because every auction is an opportunity to{" "}
-            <span id="cchange">create a story</span>
-            <br />
-            and find a new home for something special.
+            Let's go <span>Treasure</span> Hunting
           </p>
-          <a className="btn-explore" href="#sale" id="btn-salego"d>
-            Explore Now
+          <a className="btn-explore" href="#productsale">
+            Explore Products
           </a>
-        </div>
+        </motion.div>
         <div className="icon">
           <img
             src={hammer}
             className="ham bx-tada"
             alt="Auction Hammer"
-            height="300px"
+            height="200px"
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="image-con" id="about"  >
+      <div className="image-con" id="about">
         <div className="slide">
           <h1>Top Buyers</h1>
           <img src={images[index]} alt="" />
         </div>
         <div className="logo-image">
-          <img src={Logo} alt="" />
+          <img src={About} alt="" id="aboutimage" />
           <p>
-            At <span id="iname">Grey Friday</span>, we bring buyers and sellers
-            together in a dynamic and secure online auction marketplace...
+            At <span id="iname">Grey Friday</span> , we bring buyers and sellers
+            together in a dynamic and secure online auction marketplace. Our
+            platform specializes in real estate, fine art, antiques,
+            collectibles, automobiles, luxury goods, and industrial equipment.
           </p>
         </div>
         <div className="about-text">
           <h1>Why Choose Grey Friday?</h1>
           <ul>
-            <li>Exclusive & Rare Items – Find one-of-a-kind treasures...</li>
+            <li>
+              Exclusive & Rare Items – Find one-of-a-kind treasures, from
+              celebrity-owned memorabilia to ancient artifacts.
+            </li>
             <li>
               Secure & Transparent Bidding – Our platform ensures a fair and
               trustworthy auction process.
             </li>
             <li>
+              Secure & Transparent Bidding – Our platform ensures a fair and
               Expert Authentication – We verify the authenticity of high-value
-              items...
+              items, giving you confidence in your purchases.trustworthy auction
+              process.
+            </li>
+            <li>
+              Expert Authentication – We verify the authenticity of high-value
+              items, giving you confidence in your purchases.
             </li>
           </ul>
         </div>
@@ -327,47 +440,109 @@ const Seller = ({ addProduct ,user , setUser }) => {
         </form>
       </div>
 
-      <div className="service" id="service">
-        <div className="ser-content">
+      <motion.div
+        className="service"
+        id="service"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
+        <motion.div
+          className="ser-content"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h1>Our Services</h1>
           <p>
             Grey Friday offers a range of services to help buyers and sellers
-            navigate the auction process...
+            navigate the auction process. Whether you’re looking to sell a
+            valuable item or acquire a rare collectible, we provide the
+            expertise and support you need. Our services include:
           </p>
           <ul>
-            <li>Consignment Services</li>
-            <li>Appraisal & Valuation</li>
-            <li>Authentication & Certification</li>
-            <li>Shipping & Delivery</li>
-            <li>Customer Support</li>
+            {[
+              "Consignment Services",
+              "Appraisal & Valuation",
+              "Authentication & Certification",
+              "Shipping & Delivery",
+              "Customer Support",
+            ].map((service, index) => (
+              <motion.li
+                key={index}
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.2 }}
+                viewport={{ once: true }}
+              >
+                {service}
+              </motion.li>
+            ))}
           </ul>
-        </div>
-        <div className="ser-img">
-          <img src={imgdash} id="ser-img" alt="" />
-        </div>
-      </div>
+        </motion.div>
 
-      <footer id="footer">
+        <motion.div
+          className="ser-img"
+          // initial={{ opacity: 0, x: 50 }}
+          // whileInView={{ opacity: 1, x: 0 }}
+          // transition={{ duration: 0.8, ease: "easeOut" }}
+          // viewport={{ once: true }}
+        >
+          <img src={imgdash} id="ser-img" alt="" />
+        </motion.div>
+      </motion.div>
+      <Testimonials />
+
+      <motion.footer
+        id="footer"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: true }}
+      >
         <div className="row">
-          <div className="coloumn">
+          {/* Company Info Column */}
+          <motion.div
+            className="coloumn"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
             <img src={Logo} className="footer-logo" alt="Company Logo" />
             <p>
               At <span id="footer-cname">Grey Friday</span>, we bring buyers and
               sellers together in a dynamic and secure online auction
-              marketplace...
+              marketplace.
             </p>
-          </div>
+          </motion.div>
 
-          <div className="coloumn">
+          {/* Office Details Column */}
+          <motion.div
+            className="coloumn"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             <h3>Office</h3>
             <p>7/772 Church Street</p>
             <p>Anna Nagar</p>
             <p>Chennai, PIN 638008, Tamil Nadu</p>
             <p className="email">greyfriday@gmail.com</p>
             <h4>+91 - 9876554489</h4>
-          </div>
+          </motion.div>
 
-          <div className="coloumn">
+          {/* Links Column */}
+          <motion.div
+            className="coloumn"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
             <h3>Links</h3>
             <ul>
               <li>
@@ -388,28 +563,102 @@ const Seller = ({ addProduct ,user , setUser }) => {
                 <a href="#footer">Contact</a>
               </li>
             </ul>
-          </div>
+          </motion.div>
 
-          <div className="coloumn">
+          {/* Appointment & Social Media Column */}
+          <motion.div
+            className="coloumn"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
             <h2>Appointment</h2>
             <form onSubmit={handleSubmit}>
               <input type="number" placeholder="Contact Number" required />
               <button type="submit">Book Appointment</button>
             </form>
-            <div className="social-icons">
-              <a href="#" aria-label="Facebook">
+
+            {/* Social Icons Animation */}
+            <motion.div
+              className="social-icons"
+              initial={{ opacity: 0, scale: 0.5 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <a target="_blank" href="https://facebook.com" aria-label="Facebook">
                 <FaFacebook className="fb" />
               </a>
-              <a href="#" aria-label="Instagram">
+              <a target="_blank" href="https://instagram.com" aria-label="Instagram">
                 <FaInstagram className="ins" />
               </a>
-              <a href="#" aria-label="Twitter">
+              <a target="_blank" href="https://twitter.com" aria-label="Twitter">
                 <FaSquareXTwitter className="x" />
               </a>
-            </div>
+            </motion.div>
+          </motion.div>
+        </div>
+        <div className="slider">
+        <div className="slide-track">
+          <div className="br">
+            <img src={slide1} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide2} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide3} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide4} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide5} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide6} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide7} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide8} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide9} alt="" />
+          </div>
+
+          <div className="br">
+            <img src={slide1} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide2} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide3} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide4} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide5} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide6} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide7} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide8} alt="" />
+          </div>
+          <div className="br">
+            <img src={slide9} alt="" />
           </div>
         </div>
-      </footer>
+      </div>
+      </motion.footer>
     </div>
   );
 };
