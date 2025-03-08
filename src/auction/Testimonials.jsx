@@ -12,7 +12,7 @@ const initialTestimonials = [
   { name: "Leslie Alexander", role: "Director at Global Solutions", image: rev3, rating: 5, review: "Won my dream item at an unbeatable price!" },
   { name: "Eleanor Pena", role: "Vintage Collector", image: rev4, rating: 5, review: "A fantastic place to find rare items!" },
   { name: "Darlene Robertson", role: "Art Enthusiast", image: rev5, rating: 4, review: "Best auction platform for rare art pieces!" },
-  { name: "Jerome Bell", role: "Automobile Dealer", image: rev6, rating: 5, review: "Got a classic car at an unbelievable price!" }
+  { name: "Kayadu Lohar", role: "Automobile Dealer", image: rev6, rating: 5, review: "Got a classic car at an unbelievable price!" }
 ];
 
 const TestimonialCard = ({ name, role, image, rating, review }) => (

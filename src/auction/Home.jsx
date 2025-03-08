@@ -12,6 +12,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import Testimonials from "./Testimonials";
+import SellerProfileCard from "./SellerProfileCard"; 
 
 
 import per1 from "./per1.jpg";
@@ -186,6 +187,9 @@ const Home = ({ products, deleteProduct, user, setUser }) => {
                 )}
                 <a className="dd" href="#">
                   Settings
+                </a>
+                <a className="dd" href="#admininfo">
+                  Admin Info
                 </a>
                 <a className="dd" href="#productsale">
                   Products
@@ -425,6 +429,7 @@ const Home = ({ products, deleteProduct, user, setUser }) => {
           </motion.div>
         ))}
       </motion.div>
+      <SellerProfileCard />
 
       <motion.div
         className="service"

@@ -217,14 +217,11 @@
 }
 #form{
   width: 340px;
-
-
 }
 
 .wrapper h1 {
   font-size: 24px;
   color: white;
-
 }
 .b-box{
   padding: 20px;
@@ -244,6 +241,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  color: black;
 }
 
 .remem-forget {
